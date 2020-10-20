@@ -19,5 +19,4 @@ Bot that generates views on a YouTube video(s) of choice.
    - To fix this, you will need to go into your system's display settings and change the resolution to 2560 x 1080
 
 ### Running the viewBot
-* Once you have set up the environment, navigate to the directory where you have saved the 'src' folder and run: 
-   ```$ python .\viewbot.py -h```
+* Once you have set up the environment, navigate to the directory where you have saved the 'src' folder and run: ```$ python .\viewbot.py -h```
