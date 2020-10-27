@@ -6,6 +6,9 @@ Bot that generates views on a YouTube video(s) of choice.
 
 ![Images](gif/viewBot.gif)
 
+##### Breif Explanation:
+The viewBot has connected to a proxy in Denmark, has chosen to open three tabs containing the user-supplied video titled 'Will opens a fridge', has chosen to execute five different mouse clicks on each of the three tabs, has chosen to view the video in standard viewing mode (as opposed to theater mode), and has chosen to watch the video for 15 seconds before closing the driver and restarting the process.
+
 ### Prerequisites
 * Windows Operating System
    - viewBot calls commands that are configured for Windows
