@@ -1,5 +1,10 @@
-# YouTube-viewBot
+# viewBot
 Bot that generates views on a YouTube video(s) of choice.
+
+### Example Run
+*NOTE: All of the mouse-clicks in the below gif are executed by the pyAutoGUI Python library. None of these clicks are performed manually. The goal of this product is to simulate human interaction on a YouTube video without the user actually having to do anything*
+
+![Images](gif/viewBot.gif)
 
 ### Prerequisites
 * Windows Operating System
@@ -14,26 +19,26 @@ Bot that generates views on a YouTube video(s) of choice.
    - Any version of Python 3.6 will work 
    - The 'requirements'txt' file contains all of the necessary libraries. It is recommended that you install them onto a fresh environment
 * 2560 x 1080 Display Resolution
-   - During the running of the bot, a Python library called 'PyAutoGUI' executes mouse clicks on the screen according a set of coordinates
+   - During the running of the bot, a Python library called 'PyAutoGUI' executes mouse clicks on the screen according to hard-coded coordinates
    - I created this project on a 21:9 2560 x 1080 display, so the coordinates for the mouse clicks are aligned to this resolution. With any other resolution, the relative location of the pixels will be different, so the mouse clicks will not execute in the proper location, ultimately causing the program to fail
    - To fix this, you will need to go into your system's display settings and change the resolution to 2560 x 1080
 
 ### viewBot Explained
-* In order to simulate human interaction on a YouTube video, the viewBot utilizes a variety of randomly chosen mouse clicks, randomly chosen tabs opened, and a randomly chosen amount of time to watch each video for
-* In addition, the viewBot continually cycles through different proxies so that a suspicious amount of activity isn't detected at one IP address
-* All forms of interaction that the viewBot uses are randomly chosen to avoid the bot being flagged for repetitive forms of interaction with the video
-* A random number of buttons are clicked in each iteration, as well as a random number of sleep time being executed after each mouse click
-* It is virtually impossible for the same mouse click to occur twice in the same iteration. Not only are click actions randomly selected (such as playing the video, turning on subtitles, liking the video), but each action has a bounding box around it which allows the mouse to click inside of any location within this bounding box. This prevents a button, such as the play button, from being clicked in the exact same spot multiple times. If a click comes from the same coordinates on the screen multiple times, YouTube will easily flag this as a bot. As a result, all clicks are randomly selected from a hard coded bounding box.
-* The layers of randomness chosen by the viewBot are as follows. In each iteration, there is:
+* In order to simulate human interaction on a YouTube video, the viewBot utilizes a variety of randomly chosen actions
+* In addition, the viewBot continually cycles through different proxies so that a suspicious amount of activity can't be detected from your IP address
+* All forms of interaction that the viewBot uses are randomly chosen to avoid the bot being detected
+* It is virtually impossible for the same seires of clicks to be repeated twice by the viewBot
+* The layers of randomness selected in each iteration by the viewBot are as follows:
    - A randomly chosen proxy
-   - A randomly chosen number of tabs to open, each containing the desired video
-   - A random number of mouse clicks to execute on each tab
-   - A randomly chosen series of actions to execute using the mouse clicks (Ex: like the video, pause the video, enter theater mode, share the video, etc.)
+   - A randomly chosen number of tabs to open
+   - A random number of clicks to execute on each tab
+   - A randomly chosen on-screen button to select with each mouse click
+   - A randomly chosen part of the on-screen button to press
    - A randomly chosen number of seconds to pause after each click
-   - A randomly chosen number of seconds to pause (watch the video for) during each iteration
-* All together, there are six layers of randomness, with thousands of possible choices in each layer. Hypothetically, if there are 1000 possible choices in each layer, then there are 1,000^6, or 1,000,000,000,000,000,000 different combinations of actions that the viewBot can perform. This is a hypothetical scenario though, and there are well over 1,000 choices for the viewBot to select from in each 'layer'
-* The emphasis on randomness ensures that behavior characteristic of a 'bot' isn't displayed, and the YouTube algorithm that flags suspicious activity is unable to detect any type of suspicious pattern to to the extreme randomness of the actions that the bot perfoms
-   
+   - A randomly chosen number of seconds to watch the video for during each iteration
+* All together, there are seven layers of randomness, with thousands of possible choices in each layer. Hypothetically, if there are 1000 possible choices in each layer, then there are 1,000^7, or 1,000,000,000,000,000,000,000 different combinations of actions that the viewBot can perform. This is a hypothetical scenario though; layers such as the proxy to connect to and the number of tabs to open are limited. But layers such as the button to click and where on this button to press how thousands of different possibilities
+* The emphasis on randomness ensures that behavior characteristic of a 'bot' isn't displayed, and no detectable pattern is repeated by the viewBot
+
 ### Running the viewBot
 * Once you have set up the environment, navigate to the directory where you have saved the 'src' folder and run: ```$ python .\viewbot.py -h```
 * There a four commands that need to be entered prior to running the program. They are as follows:
@@ -52,3 +57,9 @@ Bot that generates views on a YouTube video(s) of choice.
        - The max number of seconds that the bot will pause for during each iteration (to simulate a human watching the video). This value will be a randomly chosen number between the range of --min and --max. In this case, the maximum amount of time that a video can be watched for during each iteration is 35 seconds
     * --min 5
        - The min number of seconds that the bot will pause for during each iteration (to simulate a human watching the video). This value will be a randomly chosen number between the range of --min and --max. In this case, the minimum amount of time that a video can be watched for during each iteration is 5 seconds
+       
+### Inspiration
+* I have a friend who is into film, and his portfolio consists of videos that he has shot himself. He had recently uploaded a video to YouTube and made it his goal to get the video to 10,000 views, so I created this bot without him knowing to surprise him by getting his video to 10,000 views in a matter of days.
+
+### Author
+* **William Schmidt** - [Wil's LikedIn](https://www.linkedin.com/in/william-schmidt-152431168/)
