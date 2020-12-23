@@ -1,14 +1,6 @@
 # viewBot
 Bot that generates views on a YouTube video(s) of choice.
 
-### Example Run
-*NOTE: All of the mouse-clicks in the below gif are executed by the pyAutoGUI Python library. None of these clicks are performed manually. The goal of this product is to simulate human interaction on a YouTube video without the user actually having to do anything*
-
-![Images](gif/viewBot.gif)
-
-##### Breif Explanation:
-The viewBot has connected to a proxy in Denmark, has chosen to open three tabs containing the user-supplied video titled 'Will opens a fridge', has chosen to execute five different mouse clicks on each of the three tabs, has chosen to view the video in standard viewing mode (as opposed to theater mode), and has chosen to watch the video for 15 seconds before closing the driver and restarting the process.
-
 ### Prerequisites
 * Windows Operating System
    - viewBot calls commands that are configured for Windows
