@@ -1,6 +1,8 @@
 # viewBot
 Bot that generates views on a YouTube video(s) of choice.
 
+![gif](gif/viewbot.gif)
+
 ### Prerequisites
 * Windows Operating System
    - viewBot calls commands that are configured for Windows
