@@ -58,8 +58,5 @@ Bot that generates views on a YouTube video(s) of choice.
     * --min 5
        - The min number of seconds that the bot will pause for during each iteration (to simulate "watching" the video). This value will be a randomly chosen number between the range of --min and --max. In this case, the minimum amount of time that a video can be watched for during each iteration is 5 seconds
        
-### Inspiration
-* I have a friend who is into film and recently uploaded one of his self-made films onto YouTube. He mentioned that it would be cool if he could get the video to 10,000 views, so I created this bot to help get his video get there in a matter of days.
-
 ### Author
 * **William Schmidt** - [Wil's LikedIn](https://www.linkedin.com/in/william-schmidt-152431168/)
