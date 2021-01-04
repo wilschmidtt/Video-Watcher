@@ -1,6 +1,9 @@
 # viewBot
 Bot that generates views on a YouTube video(s) of choice.
 
+### Example Run
+* NOTE: Outside of supplying the command line arguments, everything in the below gif is completely automated
+
 ![gif](gif/viewbot.gif)
 
 ### Prerequisites
