@@ -1,6 +1,5 @@
-NO LONGER WORKS
-# viewBot
-* Bot that generates views on a YouTube video(s) of choice. (NOTE: Bot does not actually generate views. Project just serves as practice using VPN and automated mouse-clicks)
+# Video Watch Bot
+* Bot that will watch a YouTube video(s) of choice. (NOTE: Bot does not generate views on video. Project just serves as practice using VPN and automated mouse-clicks)
 
 ### Example Run
 * NOTE: Outside of supplying the command line arguments, everything in the below gif is automated
