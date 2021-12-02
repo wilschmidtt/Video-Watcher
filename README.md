@@ -23,12 +23,10 @@
    - I created this project on a 21:9 2560 x 1080 display, so the coordinates for the mouse clicks are aligned to this resolution. With any other resolution, the relative location of the pixels will be different, so the mouse clicks will not execute in the proper location, ultimately causing the program to fail
    - To fix this, you will need to go into your system's display settings and change the resolution to 2560 x 1080
 
-### viewBot Explained
-* In order to simulate human interaction on a YouTube video, the viewBot utilizes a variety of randomly chosen actions
-* In addition, the viewBot continually cycles through different proxies so that a suspicious amount of activity can't be detected from your IP address
-* All forms of interaction that the viewBot uses are randomly chosen to avoid the bot being detected
-* It is virtually impossible for the same seires of clicks to be repeated twice by the viewBot
-* The layers of randomness selected in each iteration by the viewBot are as follows:
+### Watch Bot Explained
+* In order to simulate human interaction on a YouTube video, the watch bot utilizes a variety of randomly chosen actions
+* All forms of interaction that the watch bot uses are randomly chosen
+* The layers of randomness selected in each iteration by the watch bot are as follows:
    - A randomly chosen proxy
    - A randomly chosen number of tabs to open
    - A random number of clicks to execute on each tab
@@ -36,19 +34,19 @@
    - A randomly chosen part of the on-screen button to press
    - A randomly chosen number of seconds to pause after each click
    - A randomly chosen number of seconds to watch the video for during each iteration
-* All together, there are seven layers of randomness. Hypothetically, if there were 1,000 possible choices in each layer, then there would be 1,000^7, or 1,000,000,000,000,000,000,000 different combinations of actions that the viewBot can perform. This is a hypothetical scenario though; layers such as the proxy layer and the number of tabs to open are limited. But layers such as the button to click and what part of this button to press have thousands of different possibilities
-* The emphasis on randomness ensures that behaviors characteristic of a 'bot' aren't displayed, and no detectable pattern is left behind by the viewBot
+* All together, there are seven layers of randomness. Hypothetically, if there were 1,000 possible choices in each layer, then there would be 1,000^7, or 1,000,000,000,000,000,000,000 different combinations of actions that the watch bot can perform. This is a hypothetical scenario though; layers such as the proxy layer and the number of tabs to open are limited. But layers such as the button to click and what part of this button to press have thousands of different possibilities
+* The emphasis on randomness ensures that behaviors characteristic of a 'bot' aren't displayed, and no detectable pattern is left behind by the watch bot
 
-### Running the viewBot
-* Once you have set up the environment, navigate to the directory where you have saved the 'src' folder and run: ```$ python .\viewbot.py -h```
+### Running the Watch Bot
+* Once you have set up the environment, navigate to the directory where you have saved the 'src' folder and run: ```$ python .\watch_bot.py -h```
 * There are four commands that need to be supplied prior to running the program. They are as follows:
     * -s SEARCH_STRING, --search_string SEARCH_STRING
                         phrase to search on YouTube
     * -n NUM_RUNS, --num_runs NUM_RUNS
-                        number of times to run the viewBot in total
+                        number of times to run the watch in total
     * --max MAX             max amount of seconds to watch video for
     * --min MIN             min amount of seconds to watch video for
-* Example command: ```$ python .\viewBot.py -s "Best way to sleep on a flight" -n 150 --max 35 --min 5```
+* Example command: ```$ python .\watch_bot.py -s "Best way to sleep on a flight" -n 150 --max 35 --min 5```
     * -s "Best way to sleep on a flight"
        - Name of the YouTube video that will be loaded and watched by the bot
     * -n 150
@@ -57,6 +55,3 @@
        - The max number of seconds that the bot will pause for during each iteration (to simulate "watching" the video). This value will be a randomly chosen number between the range of --min and --max. In this case, the maximum amount of time that a video can be watched for during each iteration is 35 seconds
     * --min 5
        - The min number of seconds that the bot will pause for during each iteration (to simulate "watching" the video). This value will be a randomly chosen number between the range of --min and --max. In this case, the minimum amount of time that a video can be watched for during each iteration is 5 seconds
-       
-### Author
-* **William Schmidt** - [Wil's LikedIn](https://www.linkedin.com/in/william-schmidt-152431168/)
