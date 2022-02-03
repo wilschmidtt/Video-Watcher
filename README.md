@@ -3,7 +3,7 @@
 
 ### Example Run
 * NOTE: Outside of supplying the command line arguments, everything in the below gif is automated
-
+ 
 ![gif](gif/viewbot.gif)
  
 ### Prerequisites
