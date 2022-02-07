@@ -1,5 +1,5 @@
 # Video Watch Bot
-* Bot that will watch a YouTube video(s) of choice. (NOTE: Bot does not generate views. Project just serves as practice simulating human interaction through a program)
+* Bot that will watch a YouTube video(s) of choice. (NOTE: The bot does not generate views on the video. Program just serves as practice simulating human interaction with a program)
 
 ### Example Run
 * NOTE: Outside of supplying the command line arguments, everything in the below gif is automated
