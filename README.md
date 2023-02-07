@@ -1,5 +1,5 @@
 # Video Watch Bot
-* Bot that will watch a YouTube video(s) of choice. (NOTE: The bot does not generate views on the video. Program just serves as practice simulating human interaction with a program)
+* Bot that will watch a YouTube video(s) of choice. (NOTE: The bot does not generate views on the video. Program just serves as practice simulating human interaction with a website)
  
 ### Prerequisites
 * Windows Operating System
